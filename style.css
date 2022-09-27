@@ -6,6 +6,7 @@ h3,
 p {
   margin: 0;
 }
+
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -18,12 +19,16 @@ header {
   align-items: center;
 }
 
+h1 {
+  margin-top: 30px;
+}
+
 .header-nav .nav-list {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
-  width: 350px;
+  width: 400px;
   padding: 40px;
   margin: 40px;
   border: 2px solid white;
@@ -36,7 +41,14 @@ header {
 
 #donation-link {
   background-color: #1f211c;
+  padding: 10px;
+  border-radius: 5px;
 }
+
+main {
+  margin-bottom: 130px;
+}
+
 .company-info,
 .pets {
   padding: 20px;
@@ -68,9 +80,31 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 100%;
 }
 
 #footer-icon {
   width: 75px;
   margin: 20px;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1 {
+    margin: 0 0 0 10px;
+  }
+  main {
+    display: flex;
+  }
+  .company-info {
+    flex: 1;
+  }
+  .pets {
+    flex: 2;
+  }
+  .images-container {
+    width: 30%;
+  }
 }
